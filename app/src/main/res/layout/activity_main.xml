@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/imgbtn_creatett"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/ctimetable"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/tv_viewtt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgbtn_viewtt" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_viewtt"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="200dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/vtimetable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tw_appname"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_viewmap"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="64dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/map"
+        app:layout_constraintEnd_toEndOf="@+id/imgbtn_creatett"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imgbtn_creatett"
+        app:layout_constraintTop_toTopOf="@+id/tv_creatett"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_viewcalender"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="67dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/events"
+        app:layout_constraintBottom_toBottomOf="@+id/imgbtn_viewmap"
+        app:layout_constraintEnd_toEndOf="@+id/imgbtn_viewtt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgbtn_viewtt"
+        app:layout_constraintTop_toTopOf="@+id/imgbtn_viewmap"
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tw_appname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#000000"
+        android:text="\nSt. Augustine Timetable Companion\n"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tv_creatett"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Create Timetable"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgbtn_creatett"
+        app:layout_constraintStart_toStartOf="@+id/imgbtn_creatett"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtn_creatett" />
+
+    <TextView
+        android:id="@+id/tv_viewtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="View Timetable"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgbtn_viewtt"
+        app:layout_constraintStart_toStartOf="@+id/imgbtn_viewtt"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtn_viewtt" />
+
+    <TextView
+        android:id="@+id/tv_viewmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="View Map"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgbtn_viewmap"
+        app:layout_constraintStart_toStartOf="@+id/imgbtn_viewmap"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtn_viewmap" />
+
+    <TextView
+        android:id="@+id/tv_viewcalender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="View Events"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgbtn_viewcalender"
+        app:layout_constraintStart_toStartOf="@+id/imgbtn_viewcalender"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtn_viewcalender" />
+</androidx.constraintlayout.widget.ConstraintLayout>

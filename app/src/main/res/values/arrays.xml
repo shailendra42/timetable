@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="department_array">
+        <item>All</item>
+        <item>Department of Chemical Engineering</item>
+        <item>Department of Civil and Environmental Engineering</item>
+        <item>Department of Electrical and Computer Engineering</item>
+        <item>Department of Mechanical and Manufacturing Engineering</item>
+        <item>Department of Geomatics Engineering and Land Management</item>
+        <item>Department of Creative &amp; Festival Arts</item>
+        <item>Department of History</item>
+        <item>Department of Literary, Cultural and Communication Studies</item>
+        <item>Department of Modern Languages and Linguistics</item>
+        <item>Department of Agriculture, Economics and Extension</item>
+        <item>Department of Food Production</item>
+        <item>Department of Geography</item>
+        <item>Department of Chemistry</item>
+        <item>Department of Computing and Information Technology</item>
+        <item>Department of Life Sciences</item>
+        <item>Department of Mathematics and Statistics</item>
+        <item>Department of Physics</item>
+        <item>Department of Behavioral Sciences</item>
+        <item>Department of Economics</item>
+        <item>Department of Management Studies</item>
+        <item>Department of Sports &amp; Physical Education</item>
+
+
+    </string-array>
+</resources>
